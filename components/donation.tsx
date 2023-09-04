@@ -110,7 +110,7 @@ export default function Donation() {
     <div>
       {donationData.length > 0 ? (
         donationData.map((donation, index) => (
-          <Stack spacing={"md"}>
+          
           <Paper key={index} shadow="xs" p="md">
             <Group>
               <Text>{donation.firstName}</Text>
@@ -120,7 +120,7 @@ export default function Donation() {
               <Text>{dayjs(donation.timestamp).format("D-MMM HH:mm:ss")}</Text>
             </Group>
           </Paper>
-          </Stack>
+          
         ))
       ) : (
         <p>No donation data available.</p>
