@@ -76,7 +76,7 @@ export default function Donation() {
         setDonationData(data);
         setLoading(false);
       } catch (error) {
-        setError(error);
+        setError(error as any);
         setLoading(false);
       }
     }
